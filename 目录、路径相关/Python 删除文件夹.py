@@ -5,6 +5,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import os
 
 def onerror(func, path, exc_info):
     """

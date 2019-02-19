@@ -10,16 +10,15 @@ import os
 import shutil
 import glob
 
-# working directory
-c_dir = os.getcwd()                 # show current working directory
-os.listdir(c_dir)                   # shows all files in the working directory
-os.chdir('~/Data')                  # change working directory
+# 工作目录相关
+c_dir = os.getcwd()                 # 当前工作目录
+os.listdir(c_dir)                   # 当前工作目录的所有文件
+os.chdir('~/Data')                  # 切换工做目录
 
 
-# get all files in a directory
+# 获取某个文件夹的所有文件， 返回完整路径
 glob.glob('/Users/sebastian/Desktop/*')
-
-# e.g.,  ['/Users/sebastian/Desktop/untitled folder', '/Users/sebastian/Desktop/Untitled.txt']
+# ['/Users/sebastian/Desktop/untitled folder', '/Users/sebastian/Desktop/Untitled.txt']
 
 # walk
 tree = os.walk(c_dir)
