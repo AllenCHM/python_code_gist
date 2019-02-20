@@ -5,8 +5,9 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import os
 
-def download_package(self, package_url):
+def download_package(package_url):
     print("start download_build_result")
     if not package_url.endswith("/"):
         package_url += '/'

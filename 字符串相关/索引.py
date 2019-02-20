@@ -1,10 +1,11 @@
-#coding=utf-8
+# coding=utf-8
 __author__ = 'AllenCHM'
 import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import re
 
-tag='hx/mitaka_compute/12.0.0'
-[m.start() for m in re.finditer('/',tag)]
+tag = 'hx/mitaka_compute/12.0.0'
+[m.start() for m in re.finditer('/', tag)]

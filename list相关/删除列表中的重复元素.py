@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 __author__ = 'AllenCHM'
 import sys
 
@@ -9,8 +9,8 @@ sys.setdefaultencoding('utf-8')
 x = [1, 8, 4, 5, 5, 5, 8, 1, 8]
 list(set(x))
 
-
 # 可以维持顺序
 from collections import OrderedDict
+
 x = [1, 8, 4, 5, 5, 5, 8, 1, 8]
-list(OrderedDict.fromkeys(x))
+print list(OrderedDict.fromkeys(x))

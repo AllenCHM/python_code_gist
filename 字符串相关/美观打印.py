@@ -1,13 +1,14 @@
-#coding=utf-8
+# coding=utf-8
 __author__ = 'AllenCHM'
 import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-
 import pprint as pp
-animals = [{'animal': 'dog', 'legs': 4, 'breeds': ['Border Collie', 'Pit Bull', 'Huskie']}, {'animal': 'cat', 'legs': 4, 'breeds': ['Siamese', 'Persian', 'Sphynx']}]
+
+animals = [{'animal': 'dog', 'legs': 4, 'breeds': ['Border Collie', 'Pit Bull', 'Huskie']},
+           {'animal': 'cat', 'legs': 4, 'breeds': ['Siamese', 'Persian', 'Sphynx']}]
 pp.pprint(animals, width=1)
 
 # # Out
