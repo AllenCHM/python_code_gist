@@ -20,10 +20,10 @@ url = urllib2.urlopen("http://txt.go.sohu.com/ip/soip")
 text = url.read()
 key1 = 'user_ip'
 key2 = ';'
-s = text.find(key1)
-e = text.find(key2,s)
-IP = text[s:e]
-print IP
+# s = text.find(key1)
+# e = text.find(key2,s)
+# IP = text[s:e]
+# print IP
 
 ip = re.findall(r'\d+.\d+.\d+.\d+', text)
 print ip[0]
