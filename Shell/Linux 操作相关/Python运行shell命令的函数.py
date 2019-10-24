@@ -5,6 +5,8 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import os
+from logging import log
 
 def run(cmd_str, fatal=True):
     # this is not a good implement

@@ -5,5 +5,6 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import os
 
-os.path.split(r"C:\foo\bar\file_name.txt")
+print os.path.split(r"C:\foo\bar\file_name.txt")

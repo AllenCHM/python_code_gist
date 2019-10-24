@@ -5,7 +5,12 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import os
 
-[ name for name in os.listdir(thedir) if os.path.isdir(os.path.join(thedir, name)) ]
+thedir = '../../'
 
-filter(os.path.isdir, os.listdir(os.getcwd()))
+print [ name for name in os.listdir(thedir) if os.path.isdir(os.path.join(thedir, name)) ]
+
+print
+
+print filter(os.path.isdir, os.listdir(os.getcwd()))

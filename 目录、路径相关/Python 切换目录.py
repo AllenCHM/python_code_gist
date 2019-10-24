@@ -5,9 +5,15 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import os
+import contextlib
+
 
 # 执行完，返回之前目录
-import contextlib
+
+
+path = '.'
+
 @contextlib.contextmanager
 def cdir(path):
     prev_cwd = os.getcwd()
@@ -17,5 +23,12 @@ def cdir(path):
     finally:
         os.chdir(prev_cwd)
 
+
+def func():
+    os.chdir('..')
+    print os.getcwd()
+
+print os.getcwd()
 with cdir(path):
     func()
+print os.getcwd()

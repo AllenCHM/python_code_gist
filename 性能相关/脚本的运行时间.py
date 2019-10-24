@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 __author__ = 'AllenCHM'
 import sys
 
@@ -20,6 +20,7 @@ print("Time elapsed: {} seconds".format(elapsed_time))
 
 
 import timeit
+
 elapsed_time = timeit.timeit('for i in range(10000000): pass', number=1)
 print("Time elapsed: {} seconds".format(elapsed_time))
 

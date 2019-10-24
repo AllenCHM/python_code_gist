@@ -1,9 +1,11 @@
-#coding=utf-8
+# coding=utf-8
 __author__ = 'AllenCHM'
 import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
+import os
 
 
 # 将指定目录及其子目录下的文件搜索出来：
@@ -23,3 +25,6 @@ def find_file(start_path, name):
                 path = os.path.normpath(os.path.abspath(full_path))
                 files_path.add(path)
     return files_path
+
+
+print find_file('.', 'Python')
